@@ -1,0 +1,43 @@
+// ================== CONFIGURAÇÕES (atualize aqui quando precisar) ==================
+
+// 🔧 Link da agenda do Google Calendar para marcar visitas.
+// Troque pela URL real gerada em: https://calendar.google.com/ > Configurações > Agenda de compromissos
+const LINK_AGENDA_GOOGLE = "https://linktr.ee/salasdnutrir";
+
+// 🔧 Número de WhatsApp do espaço (com DDI + DDD, sem espaços ou símbolos).
+const NUMERO_WHATSAPP = "558599976338";
+
+// ================== APLICA OS LINKS NOS BOTÕES ==================
+
+document.querySelectorAll(".js-agendar").forEach((el) => {
+  el.setAttribute("href", LINK_AGENDA_GOOGLE);
+});
+
+document.querySelectorAll(".js-whatsapp").forEach((el) => {
+  el.setAttribute("href", `https://wa.me/${NUMERO_WHATSAPP}`);
+});
+
+// ================== FORMULÁRIO DE CONTATO -> WHATSAPP ==================
+// Como o site não tem back-end, o formulário monta a mensagem e abre o WhatsApp já preenchido.
+
+const formContato = document.querySelector(".form-contato");
+
+if (formContato) {
+  formContato.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    if (!nome || !mensagem) {
+      alert("Por favor, preencha ao menos o nome e a mensagem.");
+      return;
+    }
+
+    const texto = `Olá! Meu nome é ${nome}.%0AE-mail: ${email}%0AMensagem: ${mensagem}`;
+    window.open(`https://wa.me/${NUMERO_WHATSAPP}?text=${texto}`, "_blank");
+
+    formContato.reset();
+  });
+}

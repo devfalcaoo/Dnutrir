@@ -1,0 +1,177 @@
+/* Fonts - Títulos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fonts - Textos, menus e botões */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Cores - Colors */
+:root {
+    --hover-destaques: #C9A86A;
+    --principal-petroleo: #062B3D;
+    --secundaria-dourado: #D8BE8B;
+    --bege-claro-suave: #FAFAF8;
+    --cinza-elegante: #8A8F94;
+    --azul-escuro-secundario: #0B3B52;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Página Inicial */
+.navbar, .inicio {
+    background-color: var(--principal-petroleo);
+    color: var(--bege-claro-suave);
+}
+
+/* Offcanvas - Menu lateral */
+.navbar, .offcanvas-body, .offcanvas-header {
+    background-color: var(--principal-petroleo);
+}
+
+/* Links e botão da navbar */
+a.nav-link {
+    color: var(--bege-claro-suave);
+    padding: 0.3rem;
+    margin-left: 1.5rem;
+}
+
+a.nav-link:hover {
+    color: var(--hover-destaques);
+}
+
+#calendar-check {
+    padding: 0.3rem; /* Espaço automático entre o ícone/imagem e o texto */
+}
+
+/* botão de agendamento */
+button.btn-agendar {
+    background-color: var(--secundaria-dourado);
+    color: var(--principal-petroleo);
+    border: none;
+}
+
+button.btn-agendar:hover {
+    background-color: var(--cinza-elegante);
+    color: var(--bege-claro-suave);
+}
+
+.logo1{
+    color: var(--secundaria-dourado);
+    text-decoration: none;
+    font-family: "montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Seção de início */
+section .c-inicio, .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: 3 !important;
+}
+
+section.inicio {
+    background-image: url(/assets/img/espaco/entrada-logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right;
+    background-color: var(--principal-petroleo);
+    z-index: 1;
+}
+
+.inicio {
+    padding: 5rem 6rem;
+    position: relative; /* Para permitir que o gradiente fique atrás do conteúdo */
+    z-index: 2;
+}
+
+.c-inicio {
+    position: relative;
+    margin-left: 3rem;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.h3-inicio {
+    font-family: "inter", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.h2-inicio {
+    font-family: "playfair display", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.h1-inicio {
+    font-family: "playfair display", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.p-inicio {
+    font-family: "inter", sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Gradiente da seção de início */
+.inicio::before {
+    content: "";
+    background: linear-gradient(to right, rgba(6, 43, 61, 1) 20%, rgba(6, 43, 61, 0) 40%, rgba(11, 59, 82, 0) 80%);
+    height: 100%;
+    position: absolute;
+    width: 220%;
+    z-index: 0;
+    bottom: 0;
+}
+
+/* Botões de ação do início */
+.botoes {
+    margin-top: 0;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.btn.btn-agendar2, .btn.btn-wpp{
+    border-color: var(--secundaria-dourado);
+    background-color: transparent;
+    color: var(--bege-claro-suave);
+    padding: 0.9rem 3rem;
+}
+
+button.btn-agendar2:hover, button.btn-wpp:hover {
+    background-color: var(--cinza-elegante);
+    color: var(--bege-claro-suave);
+}
+
+/* Caracteres */
+.caracteres {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 3rem 40rem;
+    font-size: 0.8rem;
+    font-family: "inter", sans-serif;
+    margin-left: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+#caracteres {
+    font-size: 1.7rem;
+    color: var(--secundaria-dourado)
+}

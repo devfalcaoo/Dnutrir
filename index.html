@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço D'Nutrir</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/stylesheet/home.css">
+    <link rel="stylesheet" href="src/stylesheet/sobre.css">
+    <link rel="stylesheet" href="src/stylesheet/mediaquery.css">
+
+    <!-- CSS - Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="favicon" href="./assets/img/favicon.ico">
+
+    <!-- CDN do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar - Barra de Navegação -->
+    <header class="nav">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <img src="./assets/img/logo-png.png" alt="Logo do espaço" class="logo" style="height: 90px; width: 90px;">
+                <a class="logo1" href="#inicio">Espaço<br>D'Nutrir</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <!-- Cabeçalho do offcanvas -->
+                    <div class="offcanvas-header">
+                        <img src="./assets/img/espaco/entrada-logo.jpeg" alt="Logo do espaço" class="logo-offcanvas" style="height: 60px; width: 60px;">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#inicio">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#espaco">Espaço</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#planos">Planos</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="summit">Summit D'Nutrir</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="inicio" class="inicio">
+        <!-- Conteúdo da seção de início -->
+        <div class="c-inicio">
+            <h3 class="h3-inicio" style="color: #D8BE8B;">Bem-vindo (a) ao</h3>
+            <h1 class="h1-inicio">Espaço <span style="color: #D8BE8B;">D'Nutrir</span></h1>
+            <h2 class="h2-inicio">Coworking para profissionais que <br>desejam <span style="color: #D8BE8B;">crescer</span> e <span style="color: #D8BE8B;">transformar</span>.</h2>
+            <p class="p-inicio">Um espaço completo, acolhedor e pensado para <br>profissionais da saúde que valorizam profissionalismo, <br>conexão e bem-estar.</p>
+        </div>
+
+        <!-- Botões-->
+        <div class="botoes">
+            <a class="btn btn-agendar2 js-agendar" target="_blank" rel="noopener"><i class="fas fa-calendar-check" id="calendar2"></i> Agendar Visita</a>
+            <a class="btn btn-wpp js-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a>
+        </div>
+
+        <!-- caracteres -->
+        <div class="caracteres">
+            <p><i class="fa-solid fa-house-lock" id="caracteres"></i><br> Salas privativas e compartilhadas</p>
+            <p><i class="fa-solid fa-wifi" id="caracteres"></i><br>Internet de Qualidade</p>
+            <p><i class="fa-solid fa-mug-hot" id="caracteres"></i><br>Recepção equipada e acolhedora</p>
+            <p><i class="fa-solid fa-snowflake" id="caracteres"></i><br>Ambiente climatizado</p>
+        </div>
+    </section>
+
+    <!--===================== SEGUNDA SEÇÃO - SOBRE O ESPAÇO =====================-->
+
+    <section id="sobre" class="sobre">
+        
+        <img src="./assets/img/espaco/sala.jpeg" alt="Foto de um consultório do Espaço D'Nutrir" class="foto-do-consultorio">
+
+        <div class="c-sobre">
+            <h2 class="c-s_espaco">Sobre o espaço</h2>
+            <h1 class="c-s_cow">Mais que um coworking, um lugar que <span style="color: #D8BE8B;">inspira</span>.</h1>
+            <p class="c-s_sobre">O Espaço D'Nutrir foi criado para oferecer estrutura completa, ambiente acolhedor e tudo o que você precisa para realizar atendimentos com excelência.</p>
+        </div>
+
+        <!-- Valores da empresa -->
+         <div class="valores">
+            <h3 class="v-titulo">Nossos Valores</h3>
+            <div class="v1">
+                <p class="v1_p">Ética profissional</p>
+            </div>
+            <div class="v1">
+                <p class="v1_p">Auxilio na capacitação dos nossos profissionais</p>
+            </div>
+            <div class="v1">
+                <p class="v1_p">Atendimento humanizado e individualizado</p>
+            </div>
+            <div class="v1">
+                <p class="v1_p">Responsabilidade com a saúde</p>
+            </div>
+         </div>
+
+        <!-- Missão da empresa -->
+         <div class="missao">
+            <h3 class="m-missao">Nossa Missão</h3>
+            <p class="m-missao_p">Unir profissionais da saúde que buscam atender seus pacientes com um olhar integrativo. Nosso objetivo é ser uma clínica que contribui com a sociedade, reunindo profissionais capacitados de forma científica e também humana. Desse modo, desejamos fazer parte dessa construção, contribuindo na formação e no trabalho de diversos profissionais.</p>
+         </div>
+
+    </section>
+
+    <!--=============== TERCEIRA SEÇÃO - ESPAÇO ======================-->
+
+    <section id="espaco" class="espaco">
+        <h2 class="e-titulo">Nosso Espaço</h2>
+        <h1 class="e-subtitulo">Um coworking pensado para <span style="color: #D8BE8B;">profissionais da saúde</span>.</h1>
+        <p class="e-texto">O Espaço D'Nutrir foi criado para oferecer estrutura completa, ambiente acolhedor e tudo o que você precisa para realizar atendimentos com excelência.</p>
+
+        <!-- Galeria de fotos -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./assets/img/espaco/entrada-logo.jpeg" class="d-block w-100" alt="recepção">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/entrada.jpeg" class="d-block w-100" alt="recepção">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/sala.jpeg" class="d-block w-100" alt="sala3">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/sala2.jpeg" class="d-block w-100" alt="sala2">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/sala3.jpeg" class="d-block w-100" alt="sala3">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/sala31.jpeg" class="d-block w-100" alt="sala3">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/vista-mesa-cima.jpeg" class="d-block w-100" alt="mesa-paisagem">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/vista-sala.jpeg" class="d-block w-100" alt="paisagem2">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/espaco/vista.jpeg" class="d-block w-100" alt="paisagem">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">posterior</span>
+            </button>
+        </div>
+    </section>
+
+    <!--=============== CAFÉ CIENTÍFICO ======================-->
+
+    <section id="cafe-cientifico" class="cafe-cientifico">
+        <div class="cafe-conteudo">
+            <h2 class="cafe-titulo">Café Científico</h2>
+            <h1 class="cafe-subtitulo">Ciência, troca e um <span style="color: #D8BE8B;">bom café</span>.</h1>
+            <p class="cafe-texto">Um encontro periódico para profissionais e estudantes da saúde discutirem estudos, casos clínicos e novidades da área em um ambiente leve e acolhedor, no nosso auditório.</p>
+            <ul class="cafe-lista">
+                <li>Discussões de artigos e casos clínicos</li>
+                <li>Convidados especialistas em cada edição</li>
+                <li>Networking entre profissionais da saúde</li>
+                <li>Vagas limitadas, com inscrição prévia</li>
+            </ul>
+            <div class="botoes" style="margin: 1.5rem 0 0;">
+                <a class="btn btn-agendar3 js-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Quero participar</a>
+            </div>
+        </div>
+        <div class="cafe-galeria">
+            <img src="./assets/img/cafe/auditorio.jpeg" alt="Auditório do Café Científico">
+            <img src="./assets/img/cafe/auditorio2.jpeg" alt="Auditório do Café Científico">
+            <img src="./assets/img/cafe/entrada-auditorio.jpeg" alt="Entrada do auditório">
+            <img src="./assets/img/cafe/sala-cafe.jpeg" alt="Sala do café científico">
+        </div>
+    </section>
+
+    <!--================= QUARTA SEÇÃO - PLANOS =======================-->
+    <section id="planos" class="planos">
+        <h2 class="p-titulo">Nossos Planos</h2>
+        <h1 class="p-subtitulo">Planos pensados para você.</h1>
+        <p class="p-texto">O Espaço D'Nutrir foi criado para oferecer estrutura completa, ambiente acolhedor e tudo o que você precisa para realizar atendimentos com excelência.</p>
+
+        <!-- Cards dos planos -->
+        <div class="cards">
+            <div class="card card1">
+                <h3 class="c-titulo">Sala 01 e 02</h3>
+                <p class="c-texto">Ideal para profissionais que buscam praticidade e conforto no seu dia a dia.</p>
+                <ul class="c-lista">
+                    <li>Segunda à sábado</li>
+                    <li>Turno de 8h às 21h</li>
+                    <li>Valor da hora avulsa: R$ 35,00</li>
+                    <li>Ambiente climatizado</li>
+                </ul>
+                <a class="btn btn-agendar3 js-agendar" target="_blank" rel="noopener"><i class="fas fa-calendar-check" id="calendar3"></i> Agendar Visita</a>
+            </div>
+
+            <div class="card card2">
+                <h3 class="c-titulo">Sala 03</h3>
+                <p class="c-texto">Perfeito para profissionais que desejam maior espaço e conforto para seus atendimentos.</p>
+                <ul class="c-lista">
+                    <li>Segunda à sábado</li>
+                    <li>Turno de 8h às 21h</li>
+                    <li>Valor da hora avulsa: R$ 40,00</li>
+                    <li>Ainda mais conforto e espaço para seu atendimento</li>
+                </ul>
+                <a class="btn btn-agendar3 js-agendar" target="_blank" rel="noopener"><i class="fas fa-calendar-check" id="calendar3"></i> Agendar Visita</a>
+            </div>
+
+            <div class="card card3">
+                <h3 class="c-titulo">Balanças e equipamentos</h3>
+                <p class="c-texto">Equipamentos de alta qualidade para atender às necessidades dos seus pacientes.</p>
+                <ul class="c-lista">
+                    <li>Estadiômetro</li>
+                    <li>Balança comum</li>
+                    <li>Balança de bioimpendância</li>
+                    <li>Serviço de bioimpendância por R$ 30,00</li>
+                </ul>
+                <a class="btn btn-agendar3 js-agendar" target="_blank" rel="noopener"><i class="fas fa-calendar-check" id="calendar3"></i> Agendar Visita</a>
+            </div>
+        </div>
+    </section>
+
+    <!--========================= QUINTA SEÇÃO - DEPOIMENTOS ==============================-->
+    <section id="depoimentos" class="depoimentos">
+        <h2 class="d-titulo">Depoimentos</h2>
+        <h1 class="d-subtitulo">O que nossos profissionais e pacientes <span style="color: #D8BE8B;">dizem</span>.</h1>
+        <p class="d-texto">O Espaço D'Nutrir foi criado para oferecer estrutura completa, ambiente acolhedor e tudo o que você precisa para realizar atendimentos com excelência.</p>
+
+        <!-- Galeria de depoimentos -->
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="depoimento-texto">"O Espaço D'Nutrir é um lugar incrível! A estrutura é excelente e o ambiente é muito acolhedor. Me sinto em casa!"</p>
+                    <p class="depoimento-autor">- Thaynara Falcão, Nutricionista</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="depoimento-texto">"Adoro trabalhar aqui! A equipe é super profissional e o espaço é perfeito para atender meus pacientes."</p>
+                    <p class="depoimento-autor">- João Santos, Nutricionista</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="depoimento-texto">"Recomendo o Espaço D'Nutrir para todos os profissionais da saúde. É um lugar que realmente inspira!"</p>
+                    <p class="depoimento-autor">- Ana Costa, Nutricionista</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!--=============== LOCALIZAÇÃO ======================-->
+
+    <section id="localizacao" class="localizacao">
+        <div class="l-conteudo">
+            <h2 class="l-titulo">Localização</h2>
+            <h1 class="l-subtitulo">Venha nos <span style="color: #D8BE8B;">conhecer</span>.</h1>
+            <p class="l-endereco">
+                <i class="fa-solid fa-location-dot"></i>Espaço D'Nutrir<br>
+                Ed. UNO | Medical &amp; Office<br>
+                Av. Pontes Vieira, 2340 - Sl 1104<br>
+                Dionísio Torres, Fortaleza - CE, 60135-238
+            </p>
+            <a class="btn-mapa" href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o%20D%27Nutrir%2C%20Ed.%20UNO%20Medical%20%26%20Office%2C%20Av.%20Pontes%20Vieira%2C%202340%2C%20Sl%201104%2C%20Dion%C3%ADsio%20Torres%2C%20Fortaleza%20-%20CE%2C%2060135-238" target="_blank" rel="noopener">
+                <i class="fa-solid fa-diamond-turn-right"></i> Como chegar
+            </a>
+        </div>
+        <div class="l-mapa">
+            <iframe src="https://www.google.com/maps?q=Espa%C3%A7o%20D%27Nutrir%2C%20Ed.%20UNO%20Medical%20%26%20Office%2C%20Av.%20Pontes%20Vieira%2C%202340%2C%20Sl%201104%2C%20Dion%C3%ADsio%20Torres%2C%20Fortaleza%20-%20CE%2C%2060135-238&output=embed" title="Mapa - Espaço D'Nutrir" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!--=================== SEXTA SEÇÃO - CONTATO ==============================-->
+    <section id="contato" class="contato">
+        <h2 class="c-titulo">Contato</h2>
+        <h1 class="c-subtitulo">Entre em contato conosco e agende sua visita!</h1>
+        <p class="c-texto">O Espaço D'Nutrir foi criado para oferecer estrutura completa, ambiente acolhedor e tudo o que você precisa para realizar atendimentos com excelência.</p>
+
+        <!-- Formulário de contato -->
+        <form class="form-contato">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-enviar">Enviar</button>
+        </form>
+
+    </section>
+
+    <!--======================= FOOTER =============================-->
+    <section class="footer">
+        <div>
+            <p>&copy; 2023 Espaço D'Nutrir. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/devfalcao/">Falcão</a></p>
+        </div>
+    </section>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a class="wpp-flutuante js-whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JS - Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- JS - Próprio -->
+    <script src="src/js/app.js"></script>
+</body>
+</html>
