@@ -197,7 +197,7 @@ section {
 
 .planos .p-texto {
     margin: 0 auto 2.5rem;
-    color: #C7CDD1;
+    color: #fff;
 }
 
 .cards {
@@ -226,7 +226,7 @@ section {
 
 .card .c-texto {
     font-family: "inter", sans-serif;
-    color: var(--cinza-elegante);
+    color: var(--cinza-elegante) !important;
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
