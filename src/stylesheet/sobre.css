@@ -1,29 +1,6 @@
-/*===================== ESTILOS GERAIS DAS SEÇÕES (do "Sobre" em diante) =====================*/
-/* Fonts - Títulos */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Fonts - Textos, menus e botões */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Cores - Colors */
-:root {
-    --hover-destaques: #C9A86A;
-    --principal-petroleo: #062B3D;
-    --secundaria-dourado: #D8BE8B;
-    --bege-claro-suave: #FAFAF8;
-    --cinza-elegante: #8A8F94;
-    --azul-escuro-secundario: #0B3B52;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
+/* ========================================================================== */
+/* SEÇÕES DE CONTEÚDO: sobre, espaço, café, planos, contato e rodapé.         */
+/* ========================================================================== */
 
 /* Padrão reutilizado em todas as seções: espaçamento e alinhamento */
 section {
@@ -61,8 +38,8 @@ section {
 /*===================== SOBRE O ESPAÇO =====================*/
 .sobre {
     background-color: var(--bege-claro-suave);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
     gap: 3rem;
 }
@@ -83,7 +60,7 @@ section {
 
 /* Valores da empresa */
 .valores {
-    width: 50%;
+    width: 100%;
     margin-top: 2rem;
 }
 
@@ -116,7 +93,7 @@ section {
 
 /* Missão da empresa */
 .missao {
-    width: 50%;
+    width: 100%;
     margin-top: 2rem;
     padding: 2rem;
     background-color: var(--principal-petroleo);
@@ -169,6 +146,13 @@ section {
 
 .cafe-conteudo {
     flex: 1 1 400px;
+}
+
+.cafe-logo {
+    display: block;
+    width: min(100%, 200px);
+    height: auto;
+    margin-bottom: 0.8rem;
 }
 
 .cafe-lista {
@@ -376,8 +360,8 @@ a.btn-mapa:hover {
     text-align: center;
 }
 
-.c-subtitulo h1{
-    color: var(--secundaria-dourado) !important;
+#contato .c-subtitulo {
+    color: var(--secundaria-dourado);
     z-index: 2;
 }
 
@@ -431,8 +415,26 @@ button.btn-enviar:hover {
     text-decoration: underline;
 }
 
-.footer p:first-child {
-    margin-bottom: 0.3rem;
+.footer-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem 0 0.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.footer-instagram:hover {
+    transform: scale(1.12);
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p + p {
+    margin-top: 0.3rem;
 }
 
 /*===================== BOTÃO FLUTUANTE DO WHATSAPP =====================*/

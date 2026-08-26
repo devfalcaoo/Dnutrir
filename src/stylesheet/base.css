@@ -1,0 +1,28 @@
+/* ========================================================================== */
+/* BASE: tokens visuais, fontes e estilos globais compartilhados.             */
+/* ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&display=swap");
+
+:root {
+    --hover-destaques: #c9a86a;
+    --principal-petroleo: #062b3d;
+    --secundaria-dourado: #d8be8b;
+    --bege-claro-suave: #fafaf8;
+    --cinza-elegante: #8a8f94;
+    --azul-escuro-secundario: #0b3b52;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}

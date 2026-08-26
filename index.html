@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço D'Nutrir</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/stylesheet/home.css">
-    <link rel="stylesheet" href="src/stylesheet/sobre.css">
-    <link rel="stylesheet" href="src/stylesheet/mediaquery.css">
-
     <!-- CSS - Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
@@ -19,11 +14,17 @@
     <!-- CDN do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- CSS do projeto: base compartilhada, seções e responsividade -->
+    <link rel="stylesheet" href="src/stylesheet/base.css">
+    <link rel="stylesheet" href="src/stylesheet/home.css">
+    <link rel="stylesheet" href="src/stylesheet/sobre.css">
+    <link rel="stylesheet" href="src/stylesheet/mediaquery.css">
+
 </head>
 <body>
     <!-- Navbar - Barra de Navegação -->
     <header class="nav">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
             <div class="container">
                 <img src="./assets/img/logo-png.png" alt="Logo do espaço" class="logo" style="height: 90px; width: 90px;">
                 <a class="logo1" href="#inicio">Espaço<br>D'Nutrir</a>
@@ -34,7 +35,7 @@
                     
                     <!-- Cabeçalho do offcanvas -->
                     <div class="offcanvas-header">
-                        <img src="./assets/img/espaco/entrada-logo.jpeg" alt="Logo do espaço" class="logo-offcanvas" style="height: 60px; width: 60px;">
+                        <img src="./assets/img/logo-png.png" alt="Logo do espaço" class="logo-offcanvas" style="height: 60px; width: 60px;">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
@@ -112,13 +113,13 @@
                 <p class="v1_p">Ética profissional</p>
             </div>
             <div class="v1">
+                <p class="v1_p">Responsabilidade com a saúde</p>
+            </div>
+            <div class="v1">
                 <p class="v1_p">Auxilio na capacitação dos nossos profissionais</p>
             </div>
             <div class="v1">
                 <p class="v1_p">Atendimento humanizado e individualizado</p>
-            </div>
-            <div class="v1">
-                <p class="v1_p">Responsabilidade com a saúde</p>
             </div>
          </div>
 
@@ -194,7 +195,7 @@
 
     <section id="cafe-cientifico" class="cafe-cientifico">
         <div class="cafe-conteudo">
-            <h2 class="cafe-titulo">Café Científico</h2>
+            <img src="./assets/img/cafe/logo-cafe.png" alt="Café Científico D'Nutrir" class="cafe-logo">
             <h1 class="cafe-subtitulo">Ciência, troca e um <span style="color: #D8BE8B;">bom café</span>.</h1>
             <p class="cafe-texto">Um encontro periódico para profissionais e estudantes da saúde discutirem estudos, casos clínicos e novidades da área em um ambiente leve e acolhedor, no nosso auditório.</p>
             <ul class="cafe-lista">
@@ -204,7 +205,9 @@
                 <li>Vagas limitadas, com inscrição prévia</li>
             </ul>
             <div class="botoes" style="margin: 1.5rem 0 0;">
-                <a class="btn btn-agendar3 js-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Quero participar</a>
+                <a class="btn btn-agendar3 cafe-inscricao" href="https://docs.google.com/forms/d/e/1FAIpQLSdd-vGYxL3EH9HDwsDZ8XB7kR3wLNswjVv2cIGBZgNXVmCdOg/viewform" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-clipboard-list"></i> Inscreva-se no Café Científico
+                </a>
             </div>
         </div>
         <div class="cafe-galeria">
@@ -348,6 +351,9 @@
     <!--======================= FOOTER =============================-->
     <section class="footer">
         <div>
+            <a class="footer-instagram" href="https://www.instagram.com/espacodnutrir/" target="_blank" rel="noopener noreferrer" aria-label="Visitar o Instagram do Espaço D'Nutrir">
+                <i class="fab fa-instagram" alt="Instagram do Espaço D'Nutrir"></i> @espacodnutrir
+            </a>
             <p>&copy; 2023 Espaço D'Nutrir. Todos os direitos reservados.</p>
             <p>Desenvolvido por <a href="https://www.linkedin.com/in/devfalcao/">Falcão</a></p>
         </div>
