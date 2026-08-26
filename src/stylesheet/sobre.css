@@ -370,6 +370,10 @@ a.btn-mapa:hover {
     color: #C7CDD1;
 }
 
+p.c-texto {
+    color: var(--bege-claro-suave) !important;
+}
+
 .form-contato {
     max-width: 500px;
     margin: 0 auto;
@@ -392,7 +396,7 @@ button.btn-enviar {
 }
 
 button.btn-enviar:hover {
-    background-color: var(--cinza-elegante);
+    background-color: var(--cinza-claro);
     color: var(--bege-claro-suave);
 }
 
@@ -422,6 +426,10 @@ button.btn-enviar:hover {
     margin: 0.1rem 0 0.4rem;
     text-decoration: none;
     transition: transform 0.2s ease;
+}
+
+.fab {
+    padding-right: 0.4rem;
 }
 
 .footer-instagram:hover {

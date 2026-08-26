@@ -1,5 +1,3 @@
-/* ======================= 992px ============================= */
-
 @media (max-width: 992px) {
     section { padding: 4rem 2rem; }
 
@@ -31,7 +29,6 @@
     #carouselExampleIndicators img { height: min(55vw, 420px); }
 }
 
-/* ======================= 768px ============================= */
 @media (max-width: 768px) {
     section { padding: 3.5rem 1.25rem; }
 
@@ -54,6 +51,7 @@
     }
 
     .caracteres p { margin: 0; }
+    .sobre { grid-template-columns: 1fr; }
     .sobre, .cafe-cientifico, .localizacao { gap: 2rem; }
 
     .foto-do-consultorio, .cafe-conteudo, .cafe-galeria, .l-conteudo, .l-mapa {
@@ -62,15 +60,29 @@
     }
 
     .cafe-galeria img { height: 160px; }
+    .cafe-logo { width: min(100%, 250px); }
     .cards { gap: 1rem; }
     .card { max-width: none; }
     #carouselExampleIndicators2 { padding: 2rem; }
 }
 
-/* ======================= 576px ============================= */
 @media (max-width: 576px) {
     section { padding: 3rem 1rem; }
-    .inicio { min-height: 100svh; padding: 6.5rem 1rem 3rem; }
+
+    /* HOME: mantém a foto visível com contraste suficiente para a leitura. */
+    .inicio {
+        min-height: 100svh;
+        padding: 6.5rem 1rem 3rem;
+        background-image: url("../../assets/img/espaco/entrada-logo.jpeg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .inicio::before {
+        background: linear-gradient(90deg, rgba(6, 43, 61, 0.94) 0%, rgba(6, 43, 61, 0.72) 62%, rgba(6, 43, 61, 0.38) 100%);
+    }
+
     .h1-inicio { font-size: 2.35rem; }
     .h2-inicio { font-size: 1.35rem; }
     .p-inicio { font-size: 1rem; }
@@ -79,8 +91,26 @@
     .botoes { flex-direction: column; }
     .botoes .btn { flex-basis: auto; width: 100%; padding: 0.85rem 1rem; }
     .caracteres { grid-template-columns: 1fr; }
+
+    /* SOBRE: ordem de leitura pensada para telas estreitas. */
+    .sobre {
+        grid-template-areas:
+            "texto"
+            "foto"
+            "valores"
+            "missao";
+    }
+
+    .c-sobre { grid-area: texto; }
+    .foto-do-consultorio { grid-area: foto; }
+    .valores { grid-area: valores; }
+    .missao { grid-area: missao; }
+
     .v1 { display: block; margin-right: 0; }
     .missao { padding: 1.5rem; }
+
+    /* CAFÉ CIENTÍFICO */
+    .cafe-logo { margin: 0 auto 1rem; }
     .cafe-galeria { grid-template-columns: 1fr; }
     .cafe-galeria img { height: 200px; }
     #carouselExampleIndicators img { height: 250px; }
