@@ -9,15 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     <!-- Favicon -->
-    <link rel="icon" type="favicon" href="./assets/img/favicon.ico">
+    <link rel="icon" type="favicon" href="./assets/img/favicon/favicon.ico">
 
     <!-- CDN do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS do projeto: base compartilhada, seções e responsividade -->
-    <link rel="stylesheet" href="src/stylesheet/base.css">
-    <link rel="stylesheet" href="src/stylesheet/home.css">
-    <link rel="stylesheet" href="src/stylesheet/sobre.css">
+    <link rel="stylesheet" href="src/stylesheet/base.min.css">
+    <link rel="stylesheet" href="src/stylesheet/home.min.css">
+    <link rel="stylesheet" href="src/stylesheet/sobre.min.css">
     <link rel="stylesheet" href="src/stylesheet/mediaquery.css">
 
 </head>
@@ -26,8 +26,8 @@
     <header class="nav">
         <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
             <div class="container">
-                <img src="./assets/img/logo-png.png" alt="Logo do espaço" class="logo" style="height: 90px; width: 90px;">
-                <a class="logo1" href="#inicio">Espaço<br>D'Nutrir</a>
+                <img src="./assets/img/logo/logo-branca.png" alt="Logo do espaço" class="logo" style="height: 80px; width: 220px;">
+                <a class="logo1" href="#inicio">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,7 +35,7 @@
                     
                     <!-- Cabeçalho do offcanvas -->
                     <div class="offcanvas-header">
-                        <img src="./assets/img/logo-png.png" alt="Logo do espaço" class="logo-offcanvas" style="height: 60px; width: 60px;">
+                        <img src="./assets/img/logo/logo-branca.png" alt="Logo do espaço" class="logo-offcanvas" style="height: 80px; width: 230px;">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
@@ -73,7 +73,7 @@
     <section id="inicio" class="inicio">
         <!-- Conteúdo da seção de início -->
         <div class="c-inicio">
-            <h3 class="h3-inicio" style="color: #D8BE8B;">Bem-vindo (a) ao</h3>
+            <h3 class="h3-inicio" style="color: #D8BE8B;">Boas vindas ao</h3>
             <h1 class="h1-inicio">Espaço <span style="color: #D8BE8B;">D'Nutrir</span></h1>
             <h2 class="h2-inicio">Coworking para profissionais que <br>desejam <span style="color: #D8BE8B;">crescer</span> e <span style="color: #D8BE8B;">transformar</span>.</h2>
             <p class="p-inicio">Um espaço completo, acolhedor e pensado para <br>profissionais da saúde que valorizam profissionalismo, <br>conexão e bem-estar.</p>
@@ -368,6 +368,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- JS - Próprio -->
-    <script src="src/js/app.js"></script>
+    <script src="src/js/app.min.js" defer></script>
 </body>
 </html>

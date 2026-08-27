@@ -33,7 +33,7 @@
     section { padding: 3.5rem 1.25rem; }
 
     .navbar .container { gap: 0.5rem; }
-    .logo { height: 62px !important; width: 62px !important; }
+    .logo { height: 75px !important; width: 200px !important; }
     .logo1 { font-size: 1.1rem; line-height: 1.1; }
     .offcanvas { width: min(85vw, 340px) !important; }
 

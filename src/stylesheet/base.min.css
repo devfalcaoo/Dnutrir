@@ -2,16 +2,16 @@
 /* BASE: tokens visuais, fontes e estilos globais compartilhados.             */
 /* ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --hover-destaques: #c9a86a;
-    --principal-petroleo: #062b3d;
+    --principal-petroleo: #033449;
     --secundaria-dourado: #d8be8b;
     --bege-claro-suave: #fafaf8;
     --cinza-elegante: #292626;
-    --azul-escuro-secundario: #0b3b52;
-    --cinza-claro: #8a8f94;
+    --azul-escuro-secundario: #29688B;
+    --cinza-claro: #D9D9D9;
 }
 
 * {
