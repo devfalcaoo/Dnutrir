@@ -135,20 +135,6 @@ section {
     object-fit: cover;
 }
 
-/*===================== BENEFÍCIOS - CARROSEL =====================*/
-
-#carouselExampleCaptions {
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-#carouselExampleCaptions img {
-    height: 500px;
-    object-fit: cover;
-}
-
 /*===================== CAFÉ CIENTÍFICO =====================*/
 .cafe-cientifico {
     background-color: var(--bege-claro-suave);
