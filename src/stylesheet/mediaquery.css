@@ -26,7 +26,7 @@
     }
 
     .valores, .missao { width: 100%; }
-    #carouselExampleIndicators img { height: min(55vw, 420px); }
+    #carouselExampleIndicators img, #carouselExampleCaptions img { height: min(55vw, 420px); }
 }
 
 @media (max-width: 768px) {
@@ -113,7 +113,7 @@
     .cafe-logo { margin: 0 auto 1rem; }
     .cafe-galeria { grid-template-columns: 1fr; }
     .cafe-galeria img { height: 200px; }
-    #carouselExampleIndicators img { height: 250px; }
+    #carouselExampleIndicators img, #carouselExampleCaptions img { height: 250px; }
     #carouselExampleIndicators2 { padding: 1.5rem 2.5rem; }
     .depoimento-texto { font-size: 1.05rem; }
     .l-mapa, .l-mapa iframe { min-height: 250px; }
